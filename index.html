@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Royal Canine Gallery - Vintage Dog Portraits</title>
+    <title>Royal Pet Gallery - Vintage Pet Portraits</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,17 +12,38 @@
 <body>
     <header>
         <div class="container">
-            <h1 class="logo">Royal Canine Gallery</h1>
-            <p class="tagline">Where Dogs Reign Supreme</p>
+            <h1 class="logo">Royal Pet Gallery</h1>
+            <p class="tagline">Where Dogs & Cats Reign Supreme</p>
+            <button class="cart-icon" id="cartIcon">
+                <span>🛒</span>
+                <span class="cart-count" id="cartCount">0</span>
+            </button>
         </div>
     </header>
 
     <main>
         <section class="hero">
+            <div class="sparkles">
+                <div class="sparkle"></div>
+                <div class="sparkle"></div>
+                <div class="sparkle"></div>
+                <div class="sparkle"></div>
+                <div class="sparkle"></div>
+                <div class="sparkle"></div>
+                <div class="sparkle"></div>
+                <div class="sparkle"></div>
+                <div class="sparkle"></div>
+                <div class="sparkle"></div>
+                <div class="sparkle"></div>
+                <div class="sparkle"></div>
+            </div>
+            <div class="hero-image-container">
+                <img src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?w=1200&h=600&fit=crop" alt="Royal Pets" class="hero-image">
+            </div>
             <div class="container">
                 <div class="hero-content">
-                    <h2>Elegant Canine Portraits</h2>
-                    <p>Transform your beloved companion into royalty with our handcrafted vintage frames</p>
+                    <h2>Elegant Royal Portraits</h2>
+                    <p>Transform your beloved dogs and cats into royalty with our handcrafted vintage gold frames</p>
                 </div>
             </div>
         </section>
@@ -31,11 +52,10 @@
             <div class="container">
                 <h2 class="section-title">Our Collection</h2>
                 <div class="products-grid">
-                    <div class="product-card">
+                    <div class="product-card" data-id="1" data-name="King Maximus" data-price="129">
                         <div class="frame">
                             <div class="product-image">
-                                <span class="emoji">👑</span>
-                                <span class="product-label">King Maximus</span>
+                                <img src="https://images.unsplash.com/photo-1583337130417-3346a1be7dee?w=400&h=500&fit=crop" alt="King Maximus">
                             </div>
                         </div>
                         <div class="product-info">
@@ -46,11 +66,10 @@
                         </div>
                     </div>
 
-                    <div class="product-card">
+                    <div class="product-card" data-id="2" data-name="Queen Bella" data-price="129">
                         <div class="frame">
                             <div class="product-image">
-                                <span class="emoji">👸</span>
-                                <span class="product-label">Queen Bella</span>
+                                <img src="https://images.unsplash.com/photo-1601758228041-f3b2795255f1?w=400&h=500&fit=crop" alt="Queen Bella">
                             </div>
                         </div>
                         <div class="product-info">
@@ -61,11 +80,10 @@
                         </div>
                     </div>
 
-                    <div class="product-card">
+                    <div class="product-card" data-id="3" data-name="Prince Charlie" data-price="119">
                         <div class="frame">
                             <div class="product-image">
-                                <span class="emoji">🤴</span>
-                                <span class="product-label">Prince Charlie</span>
+                                <img src="https://images.unsplash.com/photo-1537151625747-768eb6cf92b2?w=400&h=500&fit=crop" alt="Prince Charlie">
                             </div>
                         </div>
                         <div class="product-info">
@@ -76,11 +94,10 @@
                         </div>
                     </div>
 
-                    <div class="product-card">
+                    <div class="product-card" data-id="4" data-name="King Rex" data-price="139">
                         <div class="frame">
                             <div class="product-image">
-                                <span class="emoji">👑</span>
-                                <span class="product-label">King Rex</span>
+                                <img src="https://images.unsplash.com/photo-1586671267731-da2d3c86db3b?w=400&h=500&fit=crop" alt="King Rex">
                             </div>
                         </div>
                         <div class="product-info">
@@ -91,11 +108,10 @@
                         </div>
                     </div>
 
-                    <div class="product-card">
+                    <div class="product-card" data-id="5" data-name="Queen Daisy" data-price="129">
                         <div class="frame">
                             <div class="product-image">
-                                <span class="emoji">👸</span>
-                                <span class="product-label">Queen Daisy</span>
+                                <img src="https://images.unsplash.com/photo-1543466835-00a7907e9de1?w=400&h=500&fit=crop" alt="Queen Daisy">
                             </div>
                         </div>
                         <div class="product-info">
@@ -106,17 +122,72 @@
                         </div>
                     </div>
 
-                    <div class="product-card">
+                    <div class="product-card" data-id="6" data-name="King Duke" data-price="119">
                         <div class="frame">
                             <div class="product-image">
-                                <span class="emoji">🤴</span>
-                                <span class="product-label">King Duke</span>
+                                <img src="https://images.unsplash.com/photo-1591160690555-5debfba289f0?w=400&h=500&fit=crop" alt="King Duke">
                             </div>
                         </div>
                         <div class="product-info">
                             <h3>King Duke</h3>
-                            <p class="product-description">A royal portrait in a vintage mahogany frame</p>
+                            <p class="product-description">A royal portrait in a vintage gold frame</p>
                             <p class="price">$119</p>
+                            <button class="btn-add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-id="7" data-name="Queen Cleopatra" data-price="139">
+                        <div class="frame">
+                            <div class="product-image">
+                                <img src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?w=400&h=500&fit=crop" alt="Queen Cleopatra">
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3>Queen Cleopatra</h3>
+                            <p class="product-description">A majestic feline queen in an opulent gold frame</p>
+                            <p class="price">$139</p>
+                            <button class="btn-add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-id="8" data-name="King Whiskers" data-price="129">
+                        <div class="frame">
+                            <div class="product-image">
+                                <img src="https://images.unsplash.com/photo-1548247411-7d5af1e63bfc?w=400&h=500&fit=crop" alt="King Whiskers">
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3>King Whiskers</h3>
+                            <p class="product-description">A noble feline king in a luxurious gold frame</p>
+                            <p class="price">$129</p>
+                            <button class="btn-add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-id="9" data-name="Princess Whiskers" data-price="119">
+                        <div class="frame">
+                            <div class="product-image">
+                                <img src="https://images.unsplash.com/photo-1533743983669-94fa7e2c08a8?w=400&h=500&fit=crop" alt="Princess Whiskers">
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3>Princess Whiskers</h3>
+                            <p class="product-description">An elegant princess portrait in a classic gold frame</p>
+                            <p class="price">$119</p>
+                            <button class="btn-add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-id="10" data-name="Emperor Midnight" data-price="149">
+                        <div class="frame">
+                            <div class="product-image">
+                                <img src="https://images.unsplash.com/photo-1535930891776-0c2dfb7fda1a?w=400&h=500&fit=crop" alt="Emperor Midnight">
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3>Emperor Midnight</h3>
+                            <p class="product-description">A regal emperor in an extravagant gold frame</p>
+                            <p class="price">$149</p>
                             <button class="btn-add-to-cart">Add to Cart</button>
                         </div>
                     </div>
@@ -127,12 +198,73 @@
 
     <footer>
         <div class="container">
-            <p>&copy; 2024 Royal Canine Gallery. All rights reserved.</p>
+            <p>&copy; 2024 Royal Pet Gallery. All rights reserved.</p>
         </div>
     </footer>
 
     <div class="cart-notification" id="cartNotification">
         <span>Added to cart!</span>
+    </div>
+
+    <!-- Shopping Cart Modal -->
+    <div class="cart-modal" id="cartModal">
+        <div class="cart-content">
+            <div class="cart-header">
+                <h2>Your Royal Cart</h2>
+                <button class="close-cart" id="closeCart">&times;</button>
+            </div>
+            <div class="cart-items" id="cartItems">
+                <!-- Cart items will be inserted here -->
+            </div>
+            <div class="cart-footer">
+                <div class="cart-total">
+                    <strong>Total: <span id="cartTotal">$0</span></strong>
+                </div>
+                <button class="btn-checkout" id="checkoutBtn">Proceed to Checkout</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Checkout Modal -->
+    <div class="checkout-modal" id="checkoutModal">
+        <div class="checkout-content">
+            <div class="checkout-header">
+                <h2>Checkout</h2>
+                <button class="close-checkout" id="closeCheckout">&times;</button>
+            </div>
+            <form class="checkout-form" id="checkoutForm">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="address">Shipping Address</label>
+                    <textarea id="address" required></textarea>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="card">Card Number</label>
+                        <input type="text" id="card" placeholder="1234 5678 9012 3456" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="cvv">CVV</label>
+                        <input type="text" id="cvv" placeholder="123" required>
+                    </div>
+                </div>
+                <div class="order-summary">
+                    <h3>Order Summary</h3>
+                    <div id="checkoutItems"></div>
+                    <div class="order-total">
+                        Total: <span id="checkoutTotal">$0</span>
+                    </div>
+                </div>
+                <button type="submit" class="btn-submit-order">Place Order</button>
+            </form>
+        </div>
     </div>
 
     <script src="script.js"></script>
